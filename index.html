@@ -354,10 +354,10 @@
               <li><a href="https://rsf.org/en" target="_blank" rel="noopener">Reporters Without Borders</a></li>
             </ul>
           </div>
-          <div class="action-card">
+          <button class="action-card share-card" onclick="if(navigator.share){navigator.share({title:'Declassify',text:'Sourced reporting on the 2026 Iran war.',url:'https://declassify.news'})}else{navigator.clipboard.writeText('https://declassify.news').then(()=>{this.querySelector('p').textContent='Link copied.'})}">
             <h3>Share this page</h3>
             <p>Verify every claim on this page. Then share it.</p>
-          </div>
+          </button>
         </div>
       </div>
     </section>

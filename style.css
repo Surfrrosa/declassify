@@ -650,6 +650,14 @@ a:focus-visible {
   border-color: var(--gray-600);
 }
 
+.share-card {
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+  text-align: left;
+  width: 100%;
+}
+
 .action-card h3 {
   font-size: 1.1rem;
   font-weight: 600;
