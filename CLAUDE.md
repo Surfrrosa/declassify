@@ -1,6 +1,6 @@
-# Broadcast
+# Declassify
 
-Sourced, verified reporting on the 2026 Iran war and US military operations. Static site deployed on Vercel.
+Sourced, verified reporting on the 2026 Iran war and US military operations. Static site at declassify.news, deployed on Vercel.
 
 ## Session Protocol
 
