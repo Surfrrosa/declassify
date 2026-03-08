@@ -188,6 +188,68 @@
       "sourceLabel": "Newsweek"
     }
   },
+  "defense": {
+    "patriot": {
+      "value": "$3.9M",
+      "label": "Cost per Patriot PAC-3 MSE interceptor",
+      "sourceUrl": "https://missilethreat.csis.org/system/patriot/",
+      "sourceLabel": "CSIS Missile Defense Project"
+    },
+    "thaad": {
+      "value": "$12.7-15M",
+      "label": "Cost per THAAD interceptor",
+      "sourceUrl": "https://crsreports.congress.gov/product/pdf/IF/IF11369",
+      "sourceLabel": "Congressional Research Service"
+    },
+    "sm3": {
+      "value": "$27.9M",
+      "label": "Cost per SM-3 Block IIA interceptor",
+      "sourceUrl": "https://crsreports.congress.gov/product/pdf/IF/IF11369",
+      "sourceLabel": "Congressional Research Service"
+    },
+    "shahed": {
+      "value": "$20,000-50,000",
+      "label": "Estimated production cost per Shahed-136 drone (Iran)",
+      "sourceUrl": "https://www.iiss.org/research-paper/2023/10/irans-drone-arsenal/",
+      "sourceLabel": "IISS"
+    },
+    "iranBallistic": {
+      "value": "$200,000-1,000,000",
+      "label": "Estimated cost per Iranian ballistic missile",
+      "sourceUrl": "https://missilethreat.csis.org/country/iran/",
+      "sourceLabel": "CSIS Missile Threat"
+    },
+    "thaadStockpile": {
+      "value": "534",
+      "label": "THAAD interceptors in US inventory before the war",
+      "sourceUrl": "https://crsreports.congress.gov/product/pdf/IF/IF11369",
+      "sourceLabel": "Congressional Research Service"
+    },
+    "thaadUsed": {
+      "value": "150+",
+      "label": "THAAD interceptors used in the June 2025 Twelve-Day War",
+      "sourceUrl": "https://crsreports.congress.gov/product/pdf/IF/IF11369",
+      "sourceLabel": "Congressional Research Service"
+    },
+    "thaadProduction": {
+      "value": "96/year",
+      "label": "Current THAAD interceptor production rate",
+      "sourceUrl": "https://crsreports.congress.gov/product/pdf/IF/IF11369",
+      "sourceLabel": "Lockheed Martin / CRS"
+    },
+    "thaadReplacement": {
+      "value": "2027-2028",
+      "label": "Earliest availability of next-generation THAAD interceptors",
+      "sourceUrl": "https://crsreports.congress.gov/product/pdf/IF/IF11369",
+      "sourceLabel": "Congressional Research Service"
+    },
+    "patriotProduction": {
+      "value": "620/year",
+      "label": "Current Patriot interceptor production rate",
+      "sourceUrl": "https://crsreports.congress.gov/product/pdf/RL/RL33745",
+      "sourceLabel": "Raytheon / CRS"
+    }
+  },
   "hormuz": {
     "tankerTraffic": {
       "value": "~0",

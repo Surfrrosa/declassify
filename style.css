@@ -735,6 +735,15 @@ a:focus-visible {
   line-height: 1.6;
 }
 
+.impact-subhead {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gray-400);
+  margin-bottom: var(--space-sm);
+}
+
 .impact-list {
   display: flex;
   flex-direction: column;
