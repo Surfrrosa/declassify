@@ -44,8 +44,7 @@
   "disputed": {
     "iranianKilled": [
       { "value": "1,300+", "who": "Iran health ministry / Al Jazeera", "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/3/11/iran-war-live-tehran-says-us-israel-hit-nearly-10000-civilian-sites" },
-      { "value": "3,117", "who": "Iranian government", "sourceUrl": "https://www.aljazeera.com/news/2026/3/8/iran-war-what-is-happening-on-day-nine-of-us-israel-attacks" },
-      { "value": "~7,000", "who": "US-based human rights group", "sourceUrl": "https://en.wikipedia.org/wiki/2026_Iran_war" },
+      { "value": "4,300+", "who": "Hengaw (first 10 days; 390 civilian, 3,910 military)", "sourceUrl": "https://hengaw.net/en/reports-and-statistics-1/2026/03/article-5" },
       { "value": "32,000", "who": "President Trump (claimed)", "sourceUrl": "https://en.wikipedia.org/wiki/2026_Iran_war" }
     ],
     "usCasualties": [
