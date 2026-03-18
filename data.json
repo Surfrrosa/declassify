@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "March 15, 2026",
+    "lastUpdated": "March 17, 2026",
     "warStartDate": "2026-02-28T00:00:00Z"
   },
   "dashboard": {
@@ -24,7 +24,7 @@
     },
     "targetsStruck": {
       "value": "15,000+",
-      "label": "Targets struck in 16 days (US-Israeli campaign)",
+      "label": "Targets struck in 18 days (US-Israeli campaign)",
       "sourceUrl": "https://www.npr.org/2026/03/14/nx-s1-5746623/iran-war-cost-deaths",
       "sourceLabel": "NPR"
     },
@@ -44,12 +44,12 @@
   "disputed": {
     "iranianKilled": [
       { "value": "1,444", "who": "Iran health ministry / Al Jazeera", "sourceUrl": "https://www.aljazeera.com/news/2026/3/13/iran-war-what-is-happening-on-day-14-of-us-israel-attacks" },
-      { "value": "4,300+", "who": "Hengaw (first 10 days; 390 civilian, 3,910 military)", "sourceUrl": "https://hengaw.net/en/reports-and-statistics-1/2026/03/article-5" },
+      { "value": "5,300+", "who": "Hengaw (18 days; 511 civilian, 4,789 military)", "sourceUrl": "https://hengaw.net/en/reports-and-statistics-1/2026/03/article-9" },
       { "value": "32,000", "who": "President Trump (claimed)", "sourceUrl": "https://en.wikipedia.org/wiki/2026_Iran_war" }
     ],
     "usCasualties": [
       { "value": "13 killed (7 combat, 6 KC-135 crash)", "who": "Pentagon / CENTCOM", "sourceUrl": "https://www.npr.org/2026/03/13/g-s1-113563/us-iran-war" },
-      { "value": "~140 wounded (108 returned to duty)", "who": "Pentagon (as of March 14)", "sourceUrl": "https://www.cnn.com/world/live-news/iran-war-us-israel-trump-03-11-26" },
+      { "value": "~200 wounded (180+ returned to duty, 10 serious)", "who": "CENTCOM (as of March 17)", "sourceUrl": "https://www.stripes.com/theaters/middle_east/2026-03-17/wounded-iran-war-centcom-21095812.html" },
       { "value": "680 killed/wounded (US and Israeli)", "who": "Iran's IRGC", "sourceUrl": "https://www.aljazeera.com/news/2026/3/7/trump-administration-denies-reports-that-iran-captured-us-soldiers" }
     ]
   },
@@ -59,19 +59,19 @@
   },
   "energy": {
     "gasPrice": {
-      "value": "$3.68",
-      "label": "National average gas price per gallon (March 15)",
+      "value": "$3.79",
+      "label": "National average gas price per gallon (March 17)",
       "sourceUrl": "https://gasprices.aaa.com/",
       "sourceLabel": "AAA"
     },
     "gasIncrease": {
-      "value": "+$0.74",
-      "label": "Gas price increase since the war started (~25%)",
+      "value": "+$0.85",
+      "label": "Gas price increase since the war started (~29%)",
       "sourceUrl": "https://gasprices.aaa.com/",
       "sourceLabel": "AAA"
     },
     "crudePrice": {
-      "value": "$99",
+      "value": "$96",
       "label": "US crude per barrel (Brent at $103)",
       "sourceUrl": "https://oilprice.com/",
       "sourceLabel": "Oilprice"
@@ -85,10 +85,10 @@
   },
   "cost": {
     "dailyCost": {
-      "value": "$1.5-2B/day",
-      "label": "Congressional estimate; $11.3B in first week",
-      "sourceUrl": "https://www.militarytimes.com/pentagon-congress/2026/03/12/price-tag-for-epic-fury-tops-11-billion-in-first-six-days-pentagon-tells-congress/",
-      "sourceLabel": "Military Times"
+      "value": "$16.5B",
+      "label": "Total estimated cost through Day 12 (~$500M/day current rate)",
+      "sourceUrl": "https://www.csis.org/analysis/iran-war-cost-estimate-update-113-billion-day-6-165-billion-day-12",
+      "sourceLabel": "CSIS"
     },
     "first100Hours": {
       "value": "$3.7B",
@@ -264,7 +264,7 @@
   "hormuz": {
     "tankerTraffic": {
       "value": "~0",
-      "label": "Tanker traffic through the strait as of March 14",
+      "label": "Tanker traffic through the strait as of March 17",
       "sourceUrl": "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis",
       "sourceLabel": "2026 Strait of Hormuz crisis"
     },
