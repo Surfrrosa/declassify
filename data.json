@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "March 17, 2026",
+    "lastUpdated": "March 20, 2026",
     "warStartDate": "2026-02-28T00:00:00Z"
   },
   "dashboard": {
@@ -24,7 +24,7 @@
     },
     "targetsStruck": {
       "value": "15,000+",
-      "label": "Targets struck in 18 days (US-Israeli campaign)",
+      "label": "Targets struck in 21 days (US-Israeli campaign)",
       "sourceUrl": "https://www.npr.org/2026/03/14/nx-s1-5746623/iran-war-cost-deaths",
       "sourceLabel": "NPR"
     },
@@ -59,20 +59,20 @@
   },
   "energy": {
     "gasPrice": {
-      "value": "$3.79",
-      "label": "National average gas price per gallon (March 17)",
+      "value": "$3.91",
+      "label": "National average gas price per gallon (March 20)",
       "sourceUrl": "https://gasprices.aaa.com/",
       "sourceLabel": "AAA"
     },
     "gasIncrease": {
-      "value": "+$0.85",
-      "label": "Gas price increase since the war started (~29%)",
+      "value": "+$0.97",
+      "label": "Gas price increase since the war started (~33%)",
       "sourceUrl": "https://gasprices.aaa.com/",
       "sourceLabel": "AAA"
     },
     "crudePrice": {
-      "value": "$96",
-      "label": "US crude per barrel (Brent at $103)",
+      "value": "$94",
+      "label": "US crude per barrel (Brent at $107)",
       "sourceUrl": "https://oilprice.com/",
       "sourceLabel": "Oilprice"
     },
@@ -107,6 +107,12 @@
       "label": "Projected total economic loss to the US",
       "sourceUrl": "https://fortune.com/2026/03/02/how-much-trump-iran-war-operation-epic-fury-cost-taxpayers/",
       "sourceLabel": "Penn Wharton / Fortune"
+    },
+    "supplemental": {
+      "value": "$200B",
+      "label": "Pentagon supplemental funding request to Congress (March 19)",
+      "sourceUrl": "https://www.npr.org/2026/03/19/nx-s1-5753520/iran-israel-gas-field-attacks",
+      "sourceLabel": "NPR"
     }
   },
   "markets": {
@@ -263,10 +269,10 @@
   },
   "hormuz": {
     "tankerTraffic": {
-      "value": "~0",
-      "label": "Tanker traffic through the strait as of March 17",
-      "sourceUrl": "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis",
-      "sourceLabel": "2026 Strait of Hormuz crisis"
+      "value": "~21",
+      "label": "Tanker transits since Feb 28 (vs. 100+/day pre-war)",
+      "sourceUrl": "https://www.aljazeera.com/economy/2026/3/18/iran-allowing-more-ships-through-strait-of-hormuz-data-shows",
+      "sourceLabel": "Al Jazeera / S&P Global"
     },
     "shipsAnchored": {
       "value": "150+",
