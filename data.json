@@ -1,19 +1,19 @@
 {
   "meta": {
-    "lastUpdated": "March 20, 2026",
+    "lastUpdated": "March 22, 2026",
     "warStartDate": "2026-02-28T00:00:00Z"
   },
   "dashboard": {
     "killed": {
-      "value": "1,444",
+      "value": "1,500+",
       "label": "Reported killed in Iran",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/3/13/iran-war-what-is-happening-on-day-14-of-us-israel-attacks",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/22/iran-war-whats-happening-on-day-23-of-us-israel-attacks",
       "sourceLabel": "Al Jazeera"
     },
     "wounded": {
-      "value": "18,551",
+      "value": "20,984",
       "label": "Reported wounded in Iran",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/3/13/iran-war-what-is-happening-on-day-14-of-us-israel-attacks",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/22/iran-war-whats-happening-on-day-23-of-us-israel-attacks",
       "sourceLabel": "Al Jazeera"
     },
     "usKilled": {
@@ -24,7 +24,7 @@
     },
     "targetsStruck": {
       "value": "15,000+",
-      "label": "Targets struck in 21 days (US-Israeli campaign)",
+      "label": "Targets struck in 23 days (US-Israeli campaign)",
       "sourceUrl": "https://www.npr.org/2026/03/14/nx-s1-5746623/iran-war-cost-deaths",
       "sourceLabel": "NPR"
     },
@@ -43,8 +43,8 @@
   },
   "disputed": {
     "iranianKilled": [
-      { "value": "1,444", "who": "Iran health ministry / Al Jazeera", "sourceUrl": "https://www.aljazeera.com/news/2026/3/13/iran-war-what-is-happening-on-day-14-of-us-israel-attacks" },
-      { "value": "5,300+", "who": "Hengaw (18 days; 511 civilian, 4,789 military)", "sourceUrl": "https://hengaw.net/en/reports-and-statistics-1/2026/03/article-9" },
+      { "value": "1,500+", "who": "Iran health ministry / Al Jazeera", "sourceUrl": "https://www.aljazeera.com/news/2026/3/22/iran-war-whats-happening-on-day-23-of-us-israel-attacks" },
+      { "value": "5,900", "who": "Hengaw (21 days; 595 civilian, 5,305 military)", "sourceUrl": "https://hengaw.net/en/reports-and-statistics-1/2026/03/article-11" },
       { "value": "32,000", "who": "President Trump (claimed)", "sourceUrl": "https://en.wikipedia.org/wiki/2026_Iran_war" }
     ],
     "usCasualties": [
@@ -59,20 +59,20 @@
   },
   "energy": {
     "gasPrice": {
-      "value": "$3.91",
-      "label": "National average gas price per gallon (March 20)",
+      "value": "$3.94",
+      "label": "National average gas price per gallon (March 22)",
       "sourceUrl": "https://gasprices.aaa.com/",
       "sourceLabel": "AAA"
     },
     "gasIncrease": {
-      "value": "+$0.97",
-      "label": "Gas price increase since the war started (~33%)",
+      "value": "+$1.00",
+      "label": "Gas price increase since the war started (~34%)",
       "sourceUrl": "https://gasprices.aaa.com/",
       "sourceLabel": "AAA"
     },
     "crudePrice": {
-      "value": "$94",
-      "label": "US crude per barrel (Brent at $107)",
+      "value": "$98",
+      "label": "US crude per barrel (Brent at $112)",
       "sourceUrl": "https://oilprice.com/",
       "sourceLabel": "Oilprice"
     },
@@ -143,22 +143,22 @@
   },
   "civilianInfra": {
     "homes": {
-      "value": "36,489",
-      "label": "Homes damaged",
-      "sourceUrl": "https://www.aa.com.tr/en/middle-east/over-42-000-civilian-structures-damaged-in-us-israeli-airstrikes-on-iran/3864566",
-      "sourceLabel": "Iranian Red Crescent / Anadolu"
+      "value": "67,414",
+      "label": "Civilian units damaged",
+      "sourceUrl": "https://www.globalsecurity.org/wmd/library/news/iran/2026/03/iran-260317-presstv12.htm",
+      "sourceLabel": "Iranian Red Crescent / Press TV"
     },
     "commercial": {
-      "value": "6,179",
+      "value": "9,218",
       "label": "Commercial centers damaged",
-      "sourceUrl": "https://www.aa.com.tr/en/middle-east/over-42-000-civilian-structures-damaged-in-us-israeli-airstrikes-on-iran/3864566",
-      "sourceLabel": "Iranian Red Crescent / Anadolu"
+      "sourceUrl": "https://www.globalsecurity.org/wmd/library/news/iran/2026/03/iran-260317-presstv12.htm",
+      "sourceLabel": "Iranian Red Crescent / Press TV"
     },
     "medical": {
-      "value": "77",
-      "label": "Medical facilities hit",
-      "sourceUrl": "https://www.aa.com.tr/en/middle-east/iran-red-crescent-says-6-668-civilian-sites-targeted-in-us-israeli-attacks/3853922",
-      "sourceLabel": "Iranian Red Crescent / Anadolu"
+      "value": "236",
+      "label": "Medical and emergency facilities damaged",
+      "sourceUrl": "https://www.globalsecurity.org/wmd/library/news/iran/2026/03/iran-260317-presstv12.htm",
+      "sourceLabel": "Iranian Red Crescent / Press TV"
     },
     "whoAttacks": {
       "value": "18",
@@ -203,6 +203,18 @@
       "label": "Oppose war (down from 56% in first week)",
       "sourceUrl": "https://www.washingtonpost.com/politics/interactive/2026/iran-war-strikes-poll/",
       "sourceLabel": "Washington Post (March 12)"
+    },
+    "emersonOppose": {
+      "value": "47%",
+      "label": "Oppose US military action in Iran",
+      "sourceUrl": "https://emersoncollegepolling.com/march-2026-national-poll-47-oppose-us-military-action-in-iran-40-support/",
+      "sourceLabel": "Emerson College (March 16-17)"
+    },
+    "emersonSupport": {
+      "value": "40%",
+      "label": "Support US military action in Iran",
+      "sourceUrl": "https://emersoncollegepolling.com/march-2026-national-poll-47-oppose-us-military-action-in-iran-40-support/",
+      "sourceLabel": "Emerson College (March 16-17)"
     }
   },
   "defense": {
