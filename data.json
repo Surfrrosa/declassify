@@ -36,9 +36,9 @@
     },
     "pentagonPress": {
       "value": "0",
-      "label": "Major news orgs with Pentagon credentials",
-      "sourceUrl": "https://www.pbs.org/newshour/show/why-news-organizations-are-rejecting-the-pentagons-new-press-rules",
-      "sourceLabel": "PBS NewsHour"
+      "label": "Major news orgs with Pentagon credentials (court ordered reinstatement March 20; appeal pending)",
+      "sourceUrl": "https://www.npr.org/2026/03/20/nx-s1-5755120/pentagon-press-policy-new-york-times-lawsuit",
+      "sourceLabel": "NPR"
     }
   },
   "disputed": {
