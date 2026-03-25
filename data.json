@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "March 22, 2026",
+    "lastUpdated": "March 24, 2026",
     "warStartDate": "2026-02-28T00:00:00Z"
   },
   "dashboard": {
@@ -24,7 +24,7 @@
     },
     "targetsStruck": {
       "value": "15,000+",
-      "label": "Targets struck in 23 days (US-Israeli campaign)",
+      "label": "Targets struck in 25 days (US-Israeli campaign)",
       "sourceUrl": "https://www.npr.org/2026/03/14/nx-s1-5746623/iran-war-cost-deaths",
       "sourceLabel": "NPR"
     },
@@ -36,7 +36,7 @@
     },
     "pentagonPress": {
       "value": "0",
-      "label": "Major news orgs with Pentagon credentials (court ordered reinstatement March 20; appeal pending)",
+      "label": "Major news orgs with Pentagon credentials (court ruled policy unlawful March 20; Pentagon appealing and removing media offices entirely)",
       "sourceUrl": "https://www.npr.org/2026/03/20/nx-s1-5755120/pentagon-press-policy-new-york-times-lawsuit",
       "sourceLabel": "NPR"
     }
@@ -49,7 +49,7 @@
     ],
     "usCasualties": [
       { "value": "13 killed (7 combat, 6 KC-135 crash)", "who": "Pentagon / CENTCOM", "sourceUrl": "https://www.npr.org/2026/03/13/g-s1-113563/us-iran-war" },
-      { "value": "~200 wounded (180+ returned to duty, 10 serious)", "who": "CENTCOM (as of March 17)", "sourceUrl": "https://www.stripes.com/theaters/middle_east/2026-03-17/wounded-iran-war-centcom-21095812.html" },
+      { "value": "290 wounded (10 serious)", "who": "US official (as of March 24)", "sourceUrl": "https://abcnews.com/International/live-updates/iran-live-updates-trumps-48-hour-deadline-expire/?id=131316431" },
       { "value": "680 killed/wounded (US and Israeli)", "who": "Iran's IRGC", "sourceUrl": "https://www.aljazeera.com/news/2026/3/7/trump-administration-denies-reports-that-iran-captured-us-soldiers" }
     ]
   },
@@ -59,20 +59,20 @@
   },
   "energy": {
     "gasPrice": {
-      "value": "$3.94",
-      "label": "National average gas price per gallon (March 22)",
+      "value": "$3.98",
+      "label": "National average gas price per gallon (March 24)",
       "sourceUrl": "https://gasprices.aaa.com/",
       "sourceLabel": "AAA"
     },
     "gasIncrease": {
-      "value": "+$1.00",
-      "label": "Gas price increase since the war started (~34%)",
+      "value": "+$1.04",
+      "label": "Gas price increase since the war started (~35%)",
       "sourceUrl": "https://gasprices.aaa.com/",
       "sourceLabel": "AAA"
     },
     "crudePrice": {
-      "value": "$98",
-      "label": "US crude per barrel (Brent at $112)",
+      "value": "$92",
+      "label": "US crude per barrel (Brent at $102; down from $112 after ultimatum postponed)",
       "sourceUrl": "https://oilprice.com/",
       "sourceLabel": "Oilprice"
     },
@@ -85,8 +85,14 @@
   },
   "cost": {
     "dailyCost": {
+      "value": "~$25B",
+      "label": "Estimated total cost on track by Day 25 (~$1B/day current rate)",
+      "sourceUrl": "https://www.americanprogress.org/article/by-the-end-of-the-week-the-trump-administrations-war-in-iran-will-likely-have-cost-25-billion/",
+      "sourceLabel": "Center for American Progress"
+    },
+    "csisCost": {
       "value": "$16.5B",
-      "label": "Total estimated cost through Day 12 (~$500M/day current rate)",
+      "label": "Verified cost through Day 12 (~$500M/day; CSIS estimate)",
       "sourceUrl": "https://www.csis.org/analysis/iran-war-cost-estimate-update-113-billion-day-6-165-billion-day-12",
       "sourceLabel": "CSIS"
     },
@@ -143,22 +149,34 @@
   },
   "civilianInfra": {
     "homes": {
-      "value": "67,414",
-      "label": "Civilian units damaged",
-      "sourceUrl": "https://www.globalsecurity.org/wmd/library/news/iran/2026/03/iran-260317-presstv12.htm",
-      "sourceLabel": "Iranian Red Crescent / Press TV"
+      "value": "62,440",
+      "label": "Residential units damaged",
+      "sourceUrl": "https://www.presstv.ir/Detail/2026/03/24/765788/Over-8200-civilian-units-damaged-by-Israeli-US-aggression-IRCS",
+      "sourceLabel": "Iranian Red Crescent / Press TV (March 24)"
     },
     "commercial": {
-      "value": "9,218",
-      "label": "Commercial centers damaged",
-      "sourceUrl": "https://www.globalsecurity.org/wmd/library/news/iran/2026/03/iran-260317-presstv12.htm",
-      "sourceLabel": "Iranian Red Crescent / Press TV"
+      "value": "19,187",
+      "label": "Commercial buildings damaged",
+      "sourceUrl": "https://www.presstv.ir/Detail/2026/03/24/765788/Over-8200-civilian-units-damaged-by-Israeli-US-aggression-IRCS",
+      "sourceLabel": "Iranian Red Crescent / Press TV (March 24)"
     },
     "medical": {
-      "value": "236",
+      "value": "281",
       "label": "Medical and emergency facilities damaged",
-      "sourceUrl": "https://www.globalsecurity.org/wmd/library/news/iran/2026/03/iran-260317-presstv12.htm",
-      "sourceLabel": "Iranian Red Crescent / Press TV"
+      "sourceUrl": "https://www.presstv.ir/Detail/2026/03/24/765788/Over-8200-civilian-units-damaged-by-Israeli-US-aggression-IRCS",
+      "sourceLabel": "Iranian Red Crescent / Press TV (March 24)"
+    },
+    "schools": {
+      "value": "481",
+      "label": "Schools damaged",
+      "sourceUrl": "https://www.presstv.ir/Detail/2026/03/24/765788/Over-8200-civilian-units-damaged-by-Israeli-US-aggression-IRCS",
+      "sourceLabel": "Iranian Red Crescent / Press TV (March 24)"
+    },
+    "displaced": {
+      "value": "3,200,000",
+      "label": "People temporarily displaced inside Iran",
+      "sourceUrl": "https://www.unhcr.org/news/press-releases/unhcr-3-2-million-iranians-temporarily-displaced-iran-conflict-intensifies",
+      "sourceLabel": "UNHCR (March 12)"
     },
     "whoAttacks": {
       "value": "18",
@@ -281,10 +299,10 @@
   },
   "hormuz": {
     "tankerTraffic": {
-      "value": "~21",
-      "label": "Tanker transits since Feb 28 (vs. 100+/day pre-war)",
-      "sourceUrl": "https://www.aljazeera.com/economy/2026/3/18/iran-allowing-more-ships-through-strait-of-hormuz-data-shows",
-      "sourceLabel": "Al Jazeera / S&P Global"
+      "value": "16",
+      "label": "AIS-visible tanker transits in past 7 days (vs. 100+/day pre-war)",
+      "sourceUrl": "https://www.cnbc.com/2026/03/18/hormuz-bottleneck-vessel-tanker-tracker-shipping-strait-of-hormuz.html",
+      "sourceLabel": "CNBC / vessel tracking"
     },
     "shipsAnchored": {
       "value": "150+",
