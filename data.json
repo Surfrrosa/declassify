@@ -49,7 +49,7 @@
     ],
     "usCasualties": [
       { "value": "13 killed (7 combat, 6 KC-135 crash)", "who": "Pentagon / CENTCOM", "sourceUrl": "https://www.npr.org/2026/03/13/g-s1-113563/us-iran-war" },
-      { "value": "290 wounded (10 serious)", "who": "US official (as of March 24)", "sourceUrl": "https://abcnews.com/International/live-updates/iran-live-updates-trumps-48-hour-deadline-expire/?id=131316431" },
+      { "value": "290 wounded (255 returned to duty, 10 serious)", "who": "CENTCOM (as of March 24)", "sourceUrl": "https://www.washingtonpost.com/national-security/2026/03/16/us-troops-wounded-iran/" },
       { "value": "680 killed/wounded (US and Israeli)", "who": "Iran's IRGC", "sourceUrl": "https://www.aljazeera.com/news/2026/3/7/trump-administration-denies-reports-that-iran-captured-us-soldiers" }
     ]
   },
