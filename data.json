@@ -1,30 +1,30 @@
 {
   "meta": {
-    "lastUpdated": "March 24, 2026",
+    "lastUpdated": "March 28, 2026",
     "warStartDate": "2026-02-28T00:00:00Z"
   },
   "dashboard": {
     "killed": {
-      "value": "1,500+",
+      "value": "1,937+",
       "label": "Reported killed in Iran",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/3/22/iran-war-whats-happening-on-day-23-of-us-israel-attacks",
-      "sourceLabel": "Al Jazeera"
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/1/us-israel-attacks-on-iran-death-toll-and-injuries-live-tracker",
+      "sourceLabel": "Al Jazeera (March 27)"
     },
     "wounded": {
-      "value": "20,984",
+      "value": "24,800",
       "label": "Reported wounded in Iran",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/3/22/iran-war-whats-happening-on-day-23-of-us-israel-attacks",
-      "sourceLabel": "Al Jazeera"
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/1/us-israel-attacks-on-iran-death-toll-and-injuries-live-tracker",
+      "sourceLabel": "Al Jazeera (March 27)"
     },
     "usKilled": {
-      "value": "13",
-      "label": "US service members killed (7 combat, 6 in KC-135 crash)",
-      "sourceUrl": "https://www.npr.org/2026/03/13/g-s1-113563/us-iran-war",
-      "sourceLabel": "NPR / CENTCOM"
+      "value": "15",
+      "label": "US service members killed",
+      "sourceUrl": "https://en.wikipedia.org/wiki/2026_Iran_war",
+      "sourceLabel": "Wikipedia / multiple sources"
     },
     "targetsStruck": {
       "value": "15,000+",
-      "label": "Targets struck in 25 days (US-Israeli campaign)",
+      "label": "Targets struck in 29 days (US-Israeli campaign)",
       "sourceUrl": "https://www.npr.org/2026/03/14/nx-s1-5746623/iran-war-cost-deaths",
       "sourceLabel": "NPR"
     },
@@ -43,14 +43,48 @@
   },
   "disputed": {
     "iranianKilled": [
-      { "value": "1,500+", "who": "Iran health ministry / Al Jazeera", "sourceUrl": "https://www.aljazeera.com/news/2026/3/22/iran-war-whats-happening-on-day-23-of-us-israel-attacks" },
-      { "value": "5,900", "who": "Hengaw (21 days; 595 civilian, 5,305 military)", "sourceUrl": "https://hengaw.net/en/reports-and-statistics-1/2026/03/article-11" },
-      { "value": "32,000", "who": "President Trump (claimed)", "sourceUrl": "https://en.wikipedia.org/wiki/2026_Iran_war" }
+      {
+        "value": "1,937+",
+        "who": "Iran Health Ministry / Al Jazeera (March 27)",
+        "sourceUrl": "https://www.aljazeera.com/news/2026/3/1/us-israel-attacks-on-iran-death-toll-and-injuries-live-tracker"
+      },
+      {
+        "value": "3,291",
+        "who": "HRANA (March 23; 1,443 civilian incl. 217 children)",
+        "sourceUrl": "https://www.en-hrana.org/day-24-of-u-s-and-israeli-attacks-on-iran-a-deadly-day-for-civilians/"
+      },
+      {
+        "value": "5,900",
+        "who": "Hengaw (21 days; 595 civilian, 5,305 military)",
+        "sourceUrl": "https://hengaw.net/en/reports-and-statistics-1/2026/03/article-11"
+      },
+      {
+        "value": "32,000",
+        "who": "President Trump (claimed)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2026_Iran_war"
+      }
     ],
     "usCasualties": [
-      { "value": "13 killed (7 combat, 6 KC-135 crash)", "who": "Pentagon / CENTCOM", "sourceUrl": "https://www.npr.org/2026/03/13/g-s1-113563/us-iran-war" },
-      { "value": "290 wounded (255 returned to duty, 10 serious)", "who": "CENTCOM (as of March 24)", "sourceUrl": "https://www.washingtonpost.com/national-security/2026/03/16/us-troops-wounded-iran/" },
-      { "value": "680 killed/wounded (US and Israeli)", "who": "Iran's IRGC", "sourceUrl": "https://www.aljazeera.com/news/2026/3/7/trump-administration-denies-reports-that-iran-captured-us-soldiers" }
+      {
+        "value": "15 killed",
+        "who": "Multiple sources / Wikipedia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2026_Iran_war"
+      },
+      {
+        "value": "13 killed (7 combat, 6 KC-135 crash)",
+        "who": "NPR / CENTCOM (as of March 28)",
+        "sourceUrl": "https://www.npr.org/2026/03/28/nx-s1-5764720/iran-war-one-month"
+      },
+      {
+        "value": "315+ wounded (12+ from Saudi base attack March 27)",
+        "who": "NPR / CENTCOM (as of March 28)",
+        "sourceUrl": "https://www.npr.org/2026/03/28/nx-s1-5764720/iran-war-one-month"
+      },
+      {
+        "value": "680 killed/wounded (US and Israeli)",
+        "who": "Iran's IRGC",
+        "sourceUrl": "https://www.aljazeera.com/news/2026/3/7/trump-administration-denies-reports-that-iran-captured-us-soldiers"
+      }
     ]
   },
   "silence": {
@@ -60,7 +94,7 @@
   "energy": {
     "gasPrice": {
       "value": "$3.98",
-      "label": "National average gas price per gallon (March 24)",
+      "label": "National average gas price per gallon (March 28)",
       "sourceUrl": "https://gasprices.aaa.com/",
       "sourceLabel": "AAA"
     },
@@ -71,8 +105,8 @@
       "sourceLabel": "AAA"
     },
     "crudePrice": {
-      "value": "$92",
-      "label": "US crude per barrel (Brent at $102; down from $112 after ultimatum postponed)",
+      "value": "$100",
+      "label": "US crude per barrel (Brent at $113)",
       "sourceUrl": "https://oilprice.com/",
       "sourceLabel": "Oilprice"
     },
@@ -85,8 +119,8 @@
   },
   "cost": {
     "dailyCost": {
-      "value": "~$25B",
-      "label": "Estimated total cost on track by Day 25 (~$1B/day current rate)",
+      "value": "~$29B",
+      "label": "Estimated total cost on track by Day 29 (~$1B/day current rate)",
       "sourceUrl": "https://www.americanprogress.org/article/by-the-end-of-the-week-the-trump-administrations-war-in-iran-will-likely-have-cost-25-billion/",
       "sourceLabel": "Center for American Progress"
     },
