@@ -1103,3 +1103,362 @@ a:focus-visible {
     border: 1px solid #ccc;
   }
 }
+
+/* =========================================
+   WAR CALENDAR
+   ========================================= */
+
+/* View Toggle */
+.tl-view-toggle {
+  display: flex;
+  margin-top: var(--space-md);
+}
+
+.tl-toggle-btn {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: transparent;
+  border: 1px solid var(--gray-800);
+  color: var(--gray-400);
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  transition: color 0.2s, background 0.2s;
+}
+
+.tl-toggle-btn:first-child {
+  border-right: none;
+}
+
+.tl-toggle-btn:hover {
+  color: var(--white);
+}
+
+.tl-toggle-btn.tl-toggle-active {
+  background: var(--gray-800);
+  color: var(--white);
+}
+
+/* Prelude */
+.cal-prelude {
+  background: var(--gray-800);
+  padding: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.cal-prelude-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--gray-400);
+  margin-bottom: var(--space-xs);
+}
+
+.cal-prelude p {
+  font-size: 0.9rem;
+  color: var(--gray-200);
+  line-height: 1.6;
+  margin-bottom: var(--space-sm);
+}
+
+.cal-prelude-link {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: transparent;
+  border: 1px solid var(--gray-600);
+  color: var(--gray-200);
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.cal-prelude-link:hover {
+  border-color: var(--white);
+  color: var(--white);
+}
+
+/* Grid */
+.cal-grid {
+  margin-bottom: var(--space-sm);
+}
+
+.cal-month-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--gray-400);
+  padding: var(--space-sm) 0 var(--space-xs);
+}
+
+.cal-week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 3px;
+  margin-bottom: 3px;
+}
+
+.cal-day-header {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  color: var(--gray-600);
+  text-align: center;
+  padding-bottom: var(--space-xs);
+}
+
+/* Cells */
+.cal-cell {
+  aspect-ratio: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  outline: 1px solid transparent;
+  outline-offset: -1px;
+  transition: outline-color 0.15s;
+}
+
+.cal-cell-empty {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.cal-cell-active {
+  cursor: pointer;
+}
+
+.cal-cell:not(.cal-cell-empty):hover {
+  outline-color: var(--gray-400);
+}
+
+.cal-cell-selected {
+  outline: 2px solid var(--white) !important;
+  outline-offset: -2px;
+}
+
+.cal-cell-today:not(.cal-cell-selected) {
+  outline: 1px dashed var(--gray-400);
+}
+
+/* Density: dark (0 events) to light (4+) */
+.cal-density-0 { background: var(--gray-800); }
+.cal-density-1 { background: var(--gray-600); }
+.cal-density-2 { background: var(--gray-400); }
+.cal-density-3 { background: var(--gray-200); color: var(--black); }
+.cal-density-4 { background: var(--white); color: var(--black); }
+
+
+/* Major event bar at bottom of cell */
+.cal-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--white);
+}
+
+.cal-density-3 .cal-bar,
+.cal-density-4 .cal-bar {
+  background: var(--black);
+}
+
+/* Legend */
+.cal-legend {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--gray-400);
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.cal-legend-label {
+  margin-right: var(--space-xs);
+}
+
+.cal-legend-swatch {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+
+.cal-legend-sep {
+  width: 1px;
+  height: 16px;
+  background: var(--gray-800);
+  margin: 0 var(--space-xs);
+}
+
+.cal-legend-major {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cal-legend-bar {
+  display: inline-block;
+  width: 20px;
+  height: 3px;
+  background: var(--white);
+}
+
+/* Event Panel */
+.cal-panel {
+  border: 1px solid var(--gray-800);
+  margin-top: var(--space-md);
+}
+
+.cal-panel-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--gray-800);
+}
+
+.cal-panel-date {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.cal-panel-close {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: var(--gray-400);
+  cursor: pointer;
+  padding: 0 var(--space-xs);
+  line-height: 1;
+  transition: color 0.2s;
+}
+
+.cal-panel-close:hover {
+  color: var(--white);
+}
+
+.cal-panel-body {
+  padding: 0 var(--space-md);
+}
+
+.cal-event {
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.cal-event:last-child {
+  border-bottom: none;
+}
+
+.cal-event-major {
+  border-left: 3px solid var(--white);
+  padding-left: var(--space-md);
+  margin-left: calc(-1 * var(--space-md));
+}
+
+@media (max-width: 640px) {
+  .cal-bar {
+    height: 2px;
+  }
+
+  .cal-event-major {
+    margin-left: 0;
+    padding-left: var(--space-sm);
+  }
+}
+
+/* =========================================
+   WAR COST TICKER
+   ========================================= */
+
+.ticker-header {
+  padding-bottom: 0;
+}
+
+.ticker-header .section-title {
+  margin-bottom: var(--space-sm);
+}
+
+.ticker-cost {
+  font-family: var(--font-mono);
+  font-size: clamp(2rem, 8vw, 4.5rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-sm);
+}
+
+.ticker-meta {
+  display: flex;
+  gap: var(--space-md);
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-bottom: var(--space-lg);
+}
+
+.ticker-since {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--gray-400);
+}
+
+.ticker-since span {
+  color: var(--white);
+  font-weight: 600;
+}
+
+.ticker-source {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--gray-600);
+}
+
+.ticker-source a {
+  color: var(--gray-400);
+}
+
+.ticker-bar {
+  overflow: hidden;
+  width: 100%;
+  background: var(--gray-800);
+  padding: var(--space-xs) 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: ticker-scroll 20s linear infinite;
+  will-change: transform;
+}
+
+.ticker-content {
+  flex-shrink: 0;
+  white-space: nowrap;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  color: var(--gray-200);
+}
+
+@keyframes ticker-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ticker-track {
+    animation: none;
+  }
+}

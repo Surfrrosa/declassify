@@ -205,4 +205,56 @@
 
     requestAnimationFrame(addBatch);
   }
+
+  // --- War cost ticker (impact page) ---
+  // Anchored to ~$29B at Day 29 (March 28, 2026).
+  // Rate: ~$1B/day ($11,574/sec). Sources: CSIS, CAP.
+  var costEl = document.getElementById('war-cost');
+  var pageCostEl = document.getElementById('page-cost');
+
+  if (costEl) {
+    var COST_BASE = 29000000000;
+    var COST_BASE_TIME = new Date('2026-03-28T00:00:00Z').getTime();
+    var COST_PER_MS = 1000000000 / 86400000;
+    var pageOpen = Date.now();
+
+    function fmtCost(n) {
+      var s = Math.floor(n).toString();
+      var parts = [];
+      for (var i = s.length; i > 0; i -= 3) {
+        parts.unshift(s.substring(Math.max(0, i - 3), i));
+      }
+      return '$' + parts.join(',');
+    }
+
+    function tickCost() {
+      var now = Date.now();
+      var total = COST_BASE + (now - COST_BASE_TIME) * COST_PER_MS;
+      var since = (now - pageOpen) * COST_PER_MS;
+      costEl.textContent = fmtCost(total);
+      if (pageCostEl) pageCostEl.textContent = fmtCost(since);
+      requestAnimationFrame(tickCost);
+    }
+
+    requestAnimationFrame(tickCost);
+
+    // Seamless ticker: repeat content until it fills the screen,
+    // then clone so the loop has no gaps.
+    var track = document.getElementById('ticker-track');
+    if (track) {
+      var content = track.querySelector('.ticker-content');
+      if (content) {
+        var html = content.innerHTML;
+        var n = 0;
+        while (content.offsetWidth < window.innerWidth * 2 && n < 20) {
+          content.innerHTML += html;
+          n++;
+        }
+        track.appendChild(content.cloneNode(true));
+        // Set speed relative to content width (consistent px/sec)
+        var pxPerSec = 60;
+        track.style.animationDuration = (content.offsetWidth / pxPerSec) + 's';
+      }
+    }
+  }
 })();

@@ -54,11 +54,19 @@
         <div class="section-label">Chronology</div>
         <h1 class="section-title">How we got here.</h1>
         <p class="section-subtitle">2018 to present. Every event sourced.</p>
+        <div class="tl-view-toggle">
+          <button class="tl-toggle-btn tl-toggle-active" data-view="calendar">Calendar</button>
+          <button class="tl-toggle-btn" data-view="list">Chronology</button>
+        </div>
       </div>
     </header>
 
     <section class="timeline" id="timeline">
       <div class="section-inner">
+
+        <div id="tl-calendar-view"></div>
+
+        <div id="tl-list-view" style="display: none;">
 
         <div class="tl-scope">
           <p>US-Iran tensions span decades: the 1953 CIA coup, the 1979 revolution, the Iran-Iraq War, the downing of Iran Air Flight 655 in 1988, cycles of sanctions and proxy conflicts. This timeline begins at the 2018 JCPOA withdrawal, the most direct chain of events leading to the current war.</p>
@@ -997,6 +1005,8 @@
 
         </div>
 
+        </div>
+
       </div>
     </section>
   </main>
@@ -1011,6 +1021,7 @@
   </footer>
 
   <script src="app.js" defer></script>
+  <script src="calendar.js" defer></script>
   <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
