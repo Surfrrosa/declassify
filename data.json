@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "April 4, 2026",
+    "lastUpdated": "April 5, 2026",
     "warStartDate": "2026-02-28T00:00:00Z"
   },
   "dashboard": {
@@ -24,7 +24,7 @@
     },
     "targetsStruck": {
       "value": "15,000+",
-      "label": "Targets struck in 36 days (US-Israeli campaign)",
+      "label": "Targets struck in 37 days (US-Israeli campaign)",
       "sourceUrl": "https://www.npr.org/2026/03/14/nx-s1-5746623/iran-war-cost-deaths",
       "sourceLabel": "NPR"
     },
