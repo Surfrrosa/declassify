@@ -7,20 +7,26 @@
     "killed": {
       "value": "2,076+",
       "label": "Reported killed in Iran",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/4/3/iran-war-what-is-happening-on-day-35-of-us-israeli-attacks",
-      "sourceLabel": "Al Jazeera (April 3)"
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/1/us-israel-attacks-on-iran-death-toll-and-injuries-live-tracker",
+      "sourceLabel": "Al Jazeera tracker (April 7)"
     },
     "wounded": {
       "value": "26,500",
       "label": "Reported wounded in Iran",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/4/3/iran-war-what-is-happening-on-day-35-of-us-israeli-attacks",
-      "sourceLabel": "Al Jazeera (April 3)"
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/1/us-israel-attacks-on-iran-death-toll-and-injuries-live-tracker",
+      "sourceLabel": "Al Jazeera tracker (April 7)"
     },
     "usKilled": {
-      "value": "15",
-      "label": "US service members killed",
-      "sourceUrl": "https://en.wikipedia.org/wiki/2026_Iran_war",
-      "sourceLabel": "Wikipedia / multiple sources"
+      "value": "13-15",
+      "label": "US service members killed (Pentagon says 13; Intercept/Wikipedia say 15)",
+      "sourceUrl": "https://www.military.com/daily-news/headlines/2026/04/04/365-us-troops-wounded-action-13-dead-operation-epic-fury.html",
+      "sourceLabel": "Military.com (April 4)"
+    },
+    "usWounded": {
+      "value": "365-520+",
+      "label": "US service members wounded (Pentagon 365 WIA; Intercept 520+)",
+      "sourceUrl": "https://theintercept.com/2026/04/01/iran-war-us-casualty-numbers-trump-hegseth/",
+      "sourceLabel": "Pentagon / The Intercept"
     },
     "targetsStruck": {
       "value": "15,000+",
@@ -46,20 +52,20 @@
   },
   "energy": {
     "gasPrice": {
-      "value": "$4.09",
-      "label": "National average gas price per gallon (April 3)",
+      "value": "$4.14",
+      "label": "National average gas price per gallon (April 7)",
       "sourceUrl": "https://gasprices.aaa.com/",
       "sourceLabel": "AAA"
     },
     "gasIncrease": {
-      "value": "+$1.15",
-      "label": "Gas price increase since the war started (~39%)",
+      "value": "+$1.20",
+      "label": "Gas price increase since the war started (~41%)",
       "sourceUrl": "https://gasprices.aaa.com/",
       "sourceLabel": "AAA"
     },
     "crudePrice": {
-      "value": "$116",
-      "label": "US crude per barrel (Brent at $111)",
+      "value": "$109",
+      "label": "US crude per barrel (Brent at $109)",
       "sourceUrl": "https://oilprice.com/",
       "sourceLabel": "Oilprice"
     },
@@ -72,8 +78,8 @@
   },
   "cost": {
     "dailyCost": {
-      "value": "~$35B",
-      "label": "Estimated total cost on track by Day 35 (~$1B/day current rate)",
+      "value": "~$39B",
+      "label": "Estimated total cost on track by Day 39 (~$1B/day current rate)",
       "sourceUrl": "https://www.americanprogress.org/article/by-the-end-of-the-week-the-trump-administrations-war-in-iran-will-likely-have-cost-25-billion/",
       "sourceLabel": "Center for American Progress"
     },
@@ -130,28 +136,28 @@
   },
   "civilianInfra": {
     "homes": {
-      "value": "62,440",
+      "value": "91,498",
       "label": "Residential units damaged",
-      "sourceUrl": "https://www.presstv.ir/Detail/2026/03/24/765788/Over-8200-civilian-units-damaged-by-Israeli-US-aggression-IRCS",
-      "sourceLabel": "Iranian Red Crescent / Press TV (March 24)"
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-red-crescent-over-11500-civilian-units-damaged-attacks",
+      "sourceLabel": "Iranian Red Crescent / Middle East Eye (April 1)"
     },
     "commercial": {
-      "value": "19,187",
+      "value": "22,580",
       "label": "Commercial buildings damaged",
-      "sourceUrl": "https://www.presstv.ir/Detail/2026/03/24/765788/Over-8200-civilian-units-damaged-by-Israeli-US-aggression-IRCS",
-      "sourceLabel": "Iranian Red Crescent / Press TV (March 24)"
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-red-crescent-over-11500-civilian-units-damaged-attacks",
+      "sourceLabel": "Iranian Red Crescent / Middle East Eye (April 1)"
     },
     "medical": {
-      "value": "281",
-      "label": "Medical and emergency facilities damaged",
-      "sourceUrl": "https://www.presstv.ir/Detail/2026/03/24/765788/Over-8200-civilian-units-damaged-by-Israeli-US-aggression-IRCS",
-      "sourceLabel": "Iranian Red Crescent / Press TV (March 24)"
+      "value": "334",
+      "label": "Health and emergency facilities damaged",
+      "sourceUrl": "https://www.unocha.org/publications/report/iran-islamic-republic/islamic-republic-iran-humanitarian-update-no-02-3-april-2026",
+      "sourceLabel": "OCHA (April 3)"
     },
     "schools": {
-      "value": "481",
-      "label": "Schools damaged",
-      "sourceUrl": "https://www.presstv.ir/Detail/2026/03/24/765788/Over-8200-civilian-units-damaged-by-Israeli-US-aggression-IRCS",
-      "sourceLabel": "Iranian Red Crescent / Press TV (March 24)"
+      "value": "736",
+      "label": "Schools and educational centers damaged",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-red-crescent-over-11500-civilian-units-damaged-attacks",
+      "sourceLabel": "Iranian Red Crescent / Middle East Eye (April 1)"
     },
     "displaced": {
       "value": "3,200,000",
@@ -160,10 +166,10 @@
       "sourceLabel": "UNHCR (March 12)"
     },
     "whoAttacks": {
-      "value": "18",
-      "label": "Verified attacks on health infrastructure (WHO)",
-      "sourceUrl": "https://www.deccanherald.com/world/middle-east/world-health-organization-confirms-18-attacks-on-healthcare-sites-in-iran-3928299",
-      "sourceLabel": "WHO / Deccan Herald"
+      "value": "20+",
+      "label": "Verified attacks on health infrastructure (WHO); 9 health workers killed",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/4/3/more-than-20-attacks-on-iranian-healthcare-facilities-since-march-1-who",
+      "sourceLabel": "WHO / Al Jazeera (April 3)"
     }
   },
   "polls": {
@@ -190,6 +196,18 @@
       "label": "Oppose sending ground troops to Iran",
       "sourceUrl": "https://poll.qu.edu/poll-release?releaseid=3952",
       "sourceLabel": "Quinnipiac (March 9)"
+    },
+    "pewDisapprove": {
+      "value": "61%",
+      "label": "Disapprove of Trump's handling (59% say wrong decision)",
+      "sourceUrl": "https://www.pewresearch.org/politics/2026/03/25/americans-broadly-disapprove-of-u-s-military-action-in-iran/",
+      "sourceLabel": "Pew Research (March 16-22)"
+    },
+    "foxOppose": {
+      "value": "58%",
+      "label": "Oppose US military action in Iran",
+      "sourceUrl": "https://www.foxnews.com/politics/fox-news-poll-views-divided-us-action-against-iran",
+      "sourceLabel": "Fox News (March 20-23)"
     },
     "cnnDisapprove": {
       "value": "66%",
