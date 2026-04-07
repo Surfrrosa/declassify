@@ -77,31 +77,38 @@
         <!-- Key figures (data-bind reads from data.json; hardcoded text is fallback) -->
         <div class="stats-grid">
           <div class="stat-card">
-            <div class="stat-number" data-bind="dashboard.killed.value">1,332</div>
+            <div class="stat-number" data-bind="dashboard.killed.value">2,076+</div>
             <div class="stat-label" data-bind="dashboard.killed.label">Reported killed in Iran</div>
             <div class="stat-source">
-              <a href="https://www.aljazeera.com/news/2026/3/1/us-israel-attacks-on-iran-death-toll-and-injuries-live-tracker" data-bind-href="dashboard.killed.sourceUrl" target="_blank" rel="noopener"><span data-bind="dashboard.killed.sourceLabel">Al Jazeera tracker</span></a>
+              <a href="https://www.aljazeera.com/news/2026/4/3/iran-war-what-is-happening-on-day-35-of-us-israeli-attacks" data-bind-href="dashboard.killed.sourceUrl" target="_blank" rel="noopener"><span data-bind="dashboard.killed.sourceLabel">Al Jazeera (April 3)</span></a>
             </div>
           </div>
           <div class="stat-card">
-            <div class="stat-number" data-bind="dashboard.wounded.value">6,000+</div>
-            <div class="stat-label" data-bind="dashboard.wounded.label">Wounded, including 300 children</div>
+            <div class="stat-number" data-bind="dashboard.wounded.value">26,500</div>
+            <div class="stat-label" data-bind="dashboard.wounded.label">Reported wounded in Iran</div>
             <div class="stat-source">
-              <a href="https://www.aljazeera.com/news/2026/3/8/iran-war-what-is-happening-on-day-nine-of-us-israel-attacks" data-bind-href="dashboard.wounded.sourceUrl" target="_blank" rel="noopener"><span data-bind="dashboard.wounded.sourceLabel">Iranian Red Crescent</span></a>
+              <a href="https://www.aljazeera.com/news/2026/4/3/iran-war-what-is-happening-on-day-35-of-us-israeli-attacks" data-bind-href="dashboard.wounded.sourceUrl" target="_blank" rel="noopener"><span data-bind="dashboard.wounded.sourceLabel">Al Jazeera (April 3)</span></a>
             </div>
           </div>
           <div class="stat-card">
-            <div class="stat-number" data-bind="dashboard.usKilled.value">6</div>
-            <div class="stat-label" data-bind="dashboard.usKilled.label">US service members killed (confirmed)</div>
+            <div class="stat-number" data-bind="dashboard.usKilled.value">13-15</div>
+            <div class="stat-label" data-bind="dashboard.usKilled.label">US service members killed (Pentagon says 13; Intercept/Wikipedia say 15)</div>
             <div class="stat-source">
-              <a href="https://www.cnn.com/2026/03/02/politics/six-soldiers-killed-in-iranian-strike-kuwait" data-bind-href="dashboard.usKilled.sourceUrl" target="_blank" rel="noopener"><span data-bind="dashboard.usKilled.sourceLabel">CNN / Pentagon</span></a>
+              <a href="https://www.military.com/daily-news/headlines/2026/04/04/365-us-troops-wounded-action-13-dead-operation-epic-fury.html" data-bind-href="dashboard.usKilled.sourceUrl" target="_blank" rel="noopener"><span data-bind="dashboard.usKilled.sourceLabel">Military.com (April 4)</span></a>
             </div>
           </div>
           <div class="stat-card">
-            <div class="stat-number" data-bind="dashboard.targetsStruck.value">4,000+</div>
-            <div class="stat-label" data-bind="dashboard.targetsStruck.label">Targets struck in first 4 days</div>
+            <div class="stat-number" data-bind="dashboard.usWounded.value">365-520+</div>
+            <div class="stat-label" data-bind="dashboard.usWounded.label">US service members wounded (Pentagon 365 WIA; Intercept 520+)</div>
             <div class="stat-source">
-              <a href="https://www.euronews.com/2026/03/07/explosions-rock-tehran-as-us-official-warns-biggest-bombing-of-war-is-coming" data-bind-href="dashboard.targetsStruck.sourceUrl" target="_blank" rel="noopener"><span data-bind="dashboard.targetsStruck.sourceLabel">US officials / Airwars</span></a>
+              <a href="https://theintercept.com/2026/04/01/iran-war-us-casualty-numbers-trump-hegseth/" data-bind-href="dashboard.usWounded.sourceUrl" target="_blank" rel="noopener"><span data-bind="dashboard.usWounded.sourceLabel">Pentagon / The Intercept</span></a>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-bind="dashboard.targetsStruck.value">15,000+</div>
+            <div class="stat-label" data-bind="dashboard.targetsStruck.label">Targets struck in 39 days (US-Israeli campaign)</div>
+            <div class="stat-source">
+              <a href="https://www.npr.org/2026/03/14/nx-s1-5746623/iran-war-cost-deaths" data-bind-href="dashboard.targetsStruck.sourceUrl" target="_blank" rel="noopener"><span data-bind="dashboard.targetsStruck.sourceLabel">NPR</span></a>
             </div>
           </div>
           <div class="stat-card">
@@ -113,7 +120,7 @@
           </div>
           <div class="stat-card">
             <div class="stat-number" data-bind="dashboard.pentagonPress.value">0</div>
-            <div class="stat-label" data-bind="dashboard.pentagonPress.label">Major news orgs with Pentagon credentials (court ordered reinstatement March 20; appeal pending)</div>
+            <div class="stat-label" data-bind="dashboard.pentagonPress.label">Major news orgs with Pentagon credentials (court ruled policy unlawful March 20; Pentagon appealing and removing media offices entirely)</div>
             <div class="stat-source">
               <a href="https://www.npr.org/2026/03/20/nx-s1-5755120/pentagon-press-policy-new-york-times-lawsuit" data-bind-href="dashboard.pentagonPress.sourceUrl" target="_blank" rel="noopener"><span data-bind="dashboard.pentagonPress.sourceLabel">NPR</span></a>
             </div>
@@ -377,7 +384,7 @@
     <!-- FOOTER -->
     <footer class="site-footer">
       <div class="section-inner">
-        <div class="footer-updated">Data updated: March 22, 2026</div>
+        <div class="footer-updated">Data updated: April 7, 2026</div>
         <div class="footer-license">
           This is a public resource. No copyright claimed on facts. <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0</a>.
         </div>

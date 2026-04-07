@@ -17,6 +17,7 @@ Open `http://localhost:8080`. No build step, no dependencies.
 - `timeline.html` - chronology 2018-present
 - `impact.html` - economic, environmental, humanitarian, geopolitical impact
 - `app.js` - data loader, war day counter, redaction reveal, scroll effects
+- `calendar.js` - war calendar heatmap (parses events from timeline HTML)
 - `style.css` - design system (brutalist, black/white/gray, IBM Plex)
 
 ## Session Protocol
@@ -44,6 +45,8 @@ Write a session log before ending every session. Format: `docs/sessions/YYYY-MM-
 | `impact.html` | Economic, environmental, humanitarian, geopolitical impact |
 | `app.js` | Data loader (reads data.json via data-bind), war day counter, scroll effects, redaction reveal |
 | `style.css` | Design system: brutalist, black/white/gray, IBM Plex fonts |
+| `calendar.js` | War calendar heatmap: parses timeline events, renders density grid |
+| `scripts/update-prices.py` | Auto-update script for oil prices (runs via GitHub Actions) |
 | `.github/workflows/check-links.yml` | Daily broken link checker |
 | `docs/sessions/` | Session logs |
 
@@ -99,9 +102,6 @@ Weekly:
 - [ ] New polling data
 
 ## Known Technical Debt
-
-### No OG image (Low)
-No custom social sharing image. Would improve link previews.
 
 ### Timeline not data-driven (By design)
 Timeline entries stay in HTML. They are append-only, structurally varied, and rarely edited once written. Templating from JSON would add complexity without saving time.

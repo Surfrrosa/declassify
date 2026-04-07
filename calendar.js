@@ -3,7 +3,7 @@
    Heatmap grid of the conflict. Each cell
    is one day. Density = event count.
    Parses events from the existing timeline
-   HTML — no duplicate data source.
+   HTML: no duplicate data source.
    ========================================= */
 
 (function () {
@@ -231,7 +231,7 @@
       var d = md(+p[0], +p[1] - 1, +p[2]);
       var wd = Math.round((d - WAR_START) / 86400000) + 1;
       pDate.textContent = MONTH_NAMES[d.getMonth()] + ' ' + d.getDate() +
-        ', ' + d.getFullYear() + ' \u2014 Day ' + wd;
+        ', ' + d.getFullYear() + ', Day ' + wd;
 
       pBody.innerHTML = (dayMap[k] || []).map(function (ev) {
         return '<div class="cal-event' + (ev.isMajor ? ' cal-event-major' : '') + '">' +
