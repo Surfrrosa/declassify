@@ -484,7 +484,6 @@ a:focus-visible {
   color: var(--gray-400);
 }
 
-/* --- Silence block (Minab) --- */
 /* --- Blackout addendum --- */
 .blackout-addendum {
   padding: var(--space-md);
@@ -703,15 +702,6 @@ a:focus-visible {
   border-top: 1px solid var(--gray-800);
 }
 
-.footer-principles {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  color: var(--gray-400);
-  max-width: 640px;
-  margin-bottom: var(--space-md);
-  line-height: 1.6;
-}
-
 .footer-updated {
   font-family: var(--font-mono);
   font-size: 0.75rem;
@@ -732,11 +722,6 @@ a:focus-visible {
 /* =========================================
    IMPACT PAGE
    ========================================= */
-.impact-section {
-  padding: var(--space-lg) 0;
-  border-bottom: 1px solid var(--gray-800);
-}
-
 .impact-context {
   margin-top: var(--space-md);
   font-size: 0.9rem;

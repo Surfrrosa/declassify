@@ -42,7 +42,7 @@
     }
     var sg = s.match(/^(\w+)\s+(\d+),?\s*(\d{4})$/);
     if (sg) {
-      var m = MONTHS[sg[1].toLowerCase()];
+      m = MONTHS[sg[1].toLowerCase()];
       if (m !== undefined) out.push(md(+sg[3], m, +sg[2]));
     }
     return out;

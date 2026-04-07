@@ -18,19 +18,16 @@
   }
 
   function bindData(data) {
-    // Populate all data-bind elements
     document.querySelectorAll('[data-bind]').forEach(function (el) {
       var val = resolvePath(data, el.getAttribute('data-bind'));
       if (val !== undefined) el.textContent = val;
     });
 
-    // Populate all data-bind-href elements (source links)
     document.querySelectorAll('[data-bind-href]').forEach(function (el) {
       var val = resolvePath(data, el.getAttribute('data-bind-href'));
       if (val !== undefined) el.href = val;
     });
 
-    // Update war day from data
     if (data.meta && data.meta.warStartDate) {
       var start = new Date(data.meta.warStartDate);
       var now = new Date();
@@ -39,14 +36,12 @@
       if (dayEl) dayEl.textContent = day;
     }
 
-    // Update all footer dates
     if (data.meta && data.meta.lastUpdated) {
       document.querySelectorAll('.footer-updated').forEach(function (el) {
         el.textContent = 'Data updated: ' + data.meta.lastUpdated;
       });
     }
 
-    // Update silence block mark count
     if (data.silence) {
       silenceCount = data.silence.count || 165;
     }
@@ -57,8 +52,8 @@
   fetch('data.json')
     .then(function (r) { return r.json(); })
     .then(bindData)
-    .catch(function () {
-      // Silently fail; HTML has hardcoded fallbacks
+    .catch(function (err) {
+      console.warn('data.json fetch failed, using HTML fallbacks:', err);
     });
 
   // --- War day counter (fallback if data.json fails) ---
@@ -120,7 +115,7 @@
   }
 
   // --- Scroll-driven section fade-in ---
-  var sections = document.querySelectorAll('.situation, .disputed, .blackout, .operations, .action, .impact-section');
+  var sections = document.querySelectorAll('.situation, .disputed, .blackout, .operations, .action');
 
   var isDesktop = window.innerWidth >= 768;
 
