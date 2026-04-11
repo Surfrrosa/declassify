@@ -136,28 +136,28 @@
   },
   "civilianInfra": {
     "homes": {
-      "value": "91,498",
+      "value": "~100,000",
       "label": "Residential units damaged",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-red-crescent-over-11500-civilian-units-damaged-attacks",
-      "sourceLabel": "Iranian Red Crescent / Middle East Eye (April 1)"
+      "sourceUrl": "https://english.aawsat.com/world/5261097-iran-counts-its-human-material-losses-5-weeks-war",
+      "sourceLabel": "Iranian Red Crescent / Asharq Al-Awsat (April 11)"
     },
     "commercial": {
-      "value": "22,580",
-      "label": "Commercial buildings damaged",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-red-crescent-over-11500-civilian-units-damaged-attacks",
-      "sourceLabel": "Iranian Red Crescent / Middle East Eye (April 1)"
+      "value": "23,500",
+      "label": "Shops and commercial facilities damaged",
+      "sourceUrl": "https://english.aawsat.com/world/5261097-iran-counts-its-human-material-losses-5-weeks-war",
+      "sourceLabel": "Iranian Red Crescent / Asharq Al-Awsat (April 11)"
     },
     "medical": {
-      "value": "334",
+      "value": "339",
       "label": "Health and emergency facilities damaged",
-      "sourceUrl": "https://www.unocha.org/publications/report/iran-islamic-republic/islamic-republic-iran-humanitarian-update-no-02-3-april-2026",
-      "sourceLabel": "OCHA (April 3)"
+      "sourceUrl": "https://english.aawsat.com/world/5261097-iran-counts-its-human-material-losses-5-weeks-war",
+      "sourceLabel": "Iranian Red Crescent / Asharq Al-Awsat (April 11)"
     },
     "schools": {
-      "value": "736",
-      "label": "Schools and educational centers damaged",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-red-crescent-over-11500-civilian-units-damaged-attacks",
-      "sourceLabel": "Iranian Red Crescent / Middle East Eye (April 1)"
+      "value": "857",
+      "label": "Schools and educational centers damaged (plus 32 universities)",
+      "sourceUrl": "https://english.aawsat.com/world/5261097-iran-counts-its-human-material-losses-5-weeks-war",
+      "sourceLabel": "Iranian Red Crescent / Asharq Al-Awsat (April 11)"
     },
     "displaced": {
       "value": "3,200,000",
