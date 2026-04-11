@@ -6,15 +6,15 @@
   "dashboard": {
     "killed": {
       "value": "2,076+",
-      "label": "Reported killed in Iran",
+      "label": "Reported killed in Iran (HRANA says 3,636; Iran forensic chief says 3,000+)",
       "sourceUrl": "https://www.aljazeera.com/news/2026/3/1/us-israel-attacks-on-iran-death-toll-and-injuries-live-tracker",
-      "sourceLabel": "Al Jazeera tracker (April 7)"
+      "sourceLabel": "Al Jazeera tracker (April 11)"
     },
     "wounded": {
       "value": "26,500",
       "label": "Reported wounded in Iran",
       "sourceUrl": "https://www.aljazeera.com/news/2026/3/1/us-israel-attacks-on-iran-death-toll-and-injuries-live-tracker",
-      "sourceLabel": "Al Jazeera tracker (April 7)"
+      "sourceLabel": "Al Jazeera tracker (April 11)"
     },
     "usKilled": {
       "value": "13-15",
@@ -23,10 +23,10 @@
       "sourceLabel": "Military.com (April 4)"
     },
     "usWounded": {
-      "value": "365-520+",
-      "label": "US service members wounded (Pentagon 365 WIA; Intercept 520+)",
-      "sourceUrl": "https://theintercept.com/2026/04/01/iran-war-us-casualty-numbers-trump-hegseth/",
-      "sourceLabel": "Pentagon / The Intercept"
+      "value": "381-520+",
+      "label": "US service members wounded (Pentagon 381 WIA April 8; Intercept 520+)",
+      "sourceUrl": "https://www.militarytimes.com/news/your-military/2026/04/08/pentagon-data-13-us-troops-killed-346-wounded-in-operation-epic-fury/",
+      "sourceLabel": "Military Times / CENTCOM (April 8)"
     },
     "targetsStruck": {
       "value": "15,000+",
@@ -52,14 +52,14 @@
   },
   "energy": {
     "gasPrice": {
-      "value": "$4.14",
-      "label": "National average gas price per gallon (April 7)",
+      "value": "$4.16",
+      "label": "National average gas price per gallon (April 9)",
       "sourceUrl": "https://gasprices.aaa.com/",
       "sourceLabel": "AAA"
     },
     "gasIncrease": {
-      "value": "+$1.20",
-      "label": "Gas price increase since the war started (~41%)",
+      "value": "+$1.22",
+      "label": "Gas price increase since the war started (~42%)",
       "sourceUrl": "https://gasprices.aaa.com/",
       "sourceLabel": "AAA"
     },
@@ -78,8 +78,8 @@
   },
   "cost": {
     "dailyCost": {
-      "value": "~$39B",
-      "label": "Estimated total cost on track by Day 39 (~$1B/day current rate)",
+      "value": "~$43B",
+      "label": "Estimated total cost on track by Day 43 (~$1B/day current rate)",
       "sourceUrl": "https://www.americanprogress.org/article/by-the-end-of-the-week-the-trump-administrations-war-in-iran-will-likely-have-cost-25-billion/",
       "sourceLabel": "Center for American Progress"
     },
@@ -286,16 +286,16 @@
   },
   "hormuz": {
     "tankerTraffic": {
-      "value": "16",
-      "label": "AIS-visible tanker transits in past 7 days (vs. 100+/day pre-war)",
-      "sourceUrl": "https://www.cnbc.com/2026/03/18/hormuz-bottleneck-vessel-tanker-tracker-shipping-strait-of-hormuz.html",
-      "sourceLabel": "CNBC / vessel tracking"
+      "value": "5-11/day",
+      "label": "Tanker transits since April 8 ceasefire (vs. ~140/day pre-war)",
+      "sourceUrl": "https://www.cnbc.com/2026/04/09/tankers-return-to-hormuz-ceasefire-disruption-to-last-weeks.html",
+      "sourceLabel": "Kpler via CNBC (April 9)"
     },
     "shipsAnchored": {
-      "value": "150+",
-      "label": "Ships anchored outside the strait",
-      "sourceUrl": "https://www.npr.org/2026/03/04/nx-s1-5736104/iran-war-oil-trump-israel-strait-hormuz-closed-energy-crisis",
-      "sourceLabel": "NPR"
+      "value": "600+",
+      "label": "Ships stranded in the Gulf, including 325 tankers",
+      "sourceUrl": "https://www.bloomberg.com/news/articles/2026-04-08/hormuz-stays-blocked-for-now-as-hundreds-of-ships-seek-escape",
+      "sourceLabel": "Lloyd's List / Bloomberg (April 8)"
     },
     "dailyBarrels": {
       "value": "13M",
