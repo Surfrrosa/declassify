@@ -6,7 +6,7 @@
   "dashboard": {
     "killed": {
       "value": "2,076+",
-      "label": "Reported killed in Iran (HRANA says 3,636; Iran forensic chief says 3,000+)",
+      "label": "Reported killed in Iran",
       "sourceUrl": "https://www.aljazeera.com/news/2026/3/1/us-israel-attacks-on-iran-death-toll-and-injuries-live-tracker",
       "sourceLabel": "Al Jazeera tracker (April 11)"
     },
@@ -23,8 +23,8 @@
       "sourceLabel": "Military.com (April 4)"
     },
     "usWounded": {
-      "value": "381-520+",
-      "label": "US service members wounded (Pentagon 381 WIA April 8; Intercept 520+)",
+      "value": "381",
+      "label": "US service members wounded in Operation Epic Fury (CENTCOM, April 8; Intercept reporting suggests undercount)",
       "sourceUrl": "https://www.militarytimes.com/news/your-military/2026/04/08/pentagon-data-13-us-troops-killed-346-wounded-in-operation-epic-fury/",
       "sourceLabel": "Military Times / CENTCOM (April 8)"
     },
