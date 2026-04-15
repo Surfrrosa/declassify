@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "April 14, 2026",
+    "lastUpdated": "April 15, 2026",
     "warStartDate": "2026-02-28T00:00:00Z"
   },
   "dashboard": {
@@ -30,7 +30,7 @@
     },
     "targetsStruck": {
       "value": "15,000+",
-      "label": "Targets struck in 46 days (US-Israeli campaign)",
+      "label": "Targets struck in 47 days (US-Israeli campaign)",
       "sourceUrl": "https://www.npr.org/2026/03/14/nx-s1-5746623/iran-war-cost-deaths",
       "sourceLabel": "NPR"
     },
@@ -64,8 +64,8 @@
       "sourceLabel": "AAA"
     },
     "crudePrice": {
-      "value": "$94",
-      "label": "US crude per barrel (Brent at $96)",
+      "value": "$92",
+      "label": "US crude per barrel (Brent at $95)",
       "sourceUrl": "https://oilprice.com/",
       "sourceLabel": "Oilprice"
     },
