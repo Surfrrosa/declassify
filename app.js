@@ -29,7 +29,10 @@
     });
 
     if (data.meta && data.meta.warStartDate) {
-      var start = new Date(data.meta.warStartDate);
+      // Parse "YYYY-MM-DD" as local midnight (not UTC) so the day count
+      // matches calendar.js and rolls at the visitor's local midnight.
+      var p = data.meta.warStartDate.split('-');
+      var start = new Date(+p[0], +p[1] - 1, +p[2]);
       var now = new Date();
       var day = Math.max(1, Math.ceil((now - start) / (1000 * 60 * 60 * 24)));
       var dayEl = document.getElementById('war-day');
@@ -42,12 +45,14 @@
       });
     }
 
-    if (data.silence) {
-      silenceCount = data.silence.count || 165;
+    if (data.silence && data.silence.count) {
+      silenceCount = data.silence.count;
     }
   }
 
-  var silenceCount = 165;
+  // Set by bindData() from data.json. If fetch fails, stays null and
+  // renderMarks bails so the HTML fallback number stays visible.
+  var silenceCount = null;
 
   fetch('data.json')
     .then(function (r) { return r.json(); })
@@ -57,7 +62,10 @@
     });
 
   // --- War day counter (fallback if data.json fails) ---
-  var WAR_START = new Date('2026-02-28T00:00:00Z');
+  // Local midnight, matching calendar.js. Single source of truth is
+  // data.meta.warStartDate in data.json; this hardcoded fallback only
+  // runs if fetch fails.
+  var WAR_START = new Date(2026, 1, 28);
 
   function getWarDay() {
     var now = new Date();
@@ -169,6 +177,8 @@
   }
 
   function renderMarks(container) {
+    if (!silenceCount) return;
+
     var marksEl = document.createElement('div');
     marksEl.className = 'silence-marks';
     marksEl.setAttribute('aria-hidden', 'true');
@@ -240,8 +250,9 @@
       var content = track.querySelector('.ticker-content');
       if (content) {
         var html = content.innerHTML;
+        var MAX_TICKER_REPEATS = 20; // runaway-loop guard
         var n = 0;
-        while (content.offsetWidth < window.innerWidth * 2 && n < 20) {
+        while (content.offsetWidth < window.innerWidth * 2 && n < MAX_TICKER_REPEATS) {
           content.innerHTML += html;
           n++;
         }

@@ -15,6 +15,7 @@ Usage:
 """
 
 import json
+import re
 import sys
 import urllib.request
 from datetime import datetime, timezone
@@ -79,7 +80,6 @@ def update(data, apply=False):
 
     # Update day count in targetsStruck label
     ts_label = data["dashboard"]["targetsStruck"]["label"]
-    import re
     new_ts_label = re.sub(r"\d+ days", f"{day} days", ts_label)
     if new_ts_label != ts_label:
         changes.append(f"targetsStruck label: day count -> {day}")
